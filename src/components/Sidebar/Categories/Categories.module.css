@@ -1,0 +1,9 @@
+.categoryContainer {
+  margin-bottom: 20px;
+}
+
+.categoryName {
+  color: grey bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+}

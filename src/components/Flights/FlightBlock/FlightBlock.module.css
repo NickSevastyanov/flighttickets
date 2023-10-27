@@ -1,0 +1,62 @@
+h1 {
+  font-size: 20px;
+}
+
+.ticketContainer {
+  min-width: 500px;
+  margin-bottom: 30px;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+.header {
+  background-color: #55aaff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 15px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.infoContainer {
+  font-size: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid grey;
+}
+
+.codeColor {
+  color: #55aaff;
+}
+
+.timeContainer {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.transferContainer {
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: #ffa500;
+  display: flex;
+  justify-content: center;
+}
+
+.carrierContainer {
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #55aaff;
+}

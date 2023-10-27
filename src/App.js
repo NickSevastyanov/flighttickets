@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import FlightBlock from './components/Flights/FlightBlock';
+
+import './main.css';
+
+import { useSelector } from 'react-redux';
 
 function App() {
+  const { items, sortedItems } = useSelector((state) => state.Flights);
+  // const getFlights = items.slice(0, 5).map((obj) => (
+  //   <FlightBlock key={obj.flightToken} {...obj} />
+  // ))
+  const getSortedFlights = sortedItems
+    .slice(0, 4)
+    .map((obj) => <FlightBlock key={obj.flightToken} {...obj} />);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Sidebar />
+      </div>
+      <div>{getSortedFlights.length > 0 ? getSortedFlights : 'нет подходящих билетов'}</div>
     </div>
   );
 }

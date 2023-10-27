@@ -1,0 +1,13 @@
+.priceContainer {
+  margin-bottom: 20px;
+}
+
+.priceName {
+  color: grey bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+input {
+  margin-right: 5px;
+}
